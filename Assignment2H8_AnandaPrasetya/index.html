@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <Li> <a href="#">BLOG</a></Li>
+            <li><a href="#">MY INVENTORY</a></li>
+        </ul>
+        <button class="menu-btn"><p class="text">MENU</p></button>
+    </nav>
+
+    <section class="container">
+        <div class="image-cropper">
+            <img src="images/avatar.jpg" alt="Avatar" class="profile-pic">
+        </div>
+        <div class="content-1">
+            <table id="show1" name="show1">
+                <tr>
+                    <td><h2 id="showName">Ananda</h2></td>
+                    </tr>
+                    <tr>
+                    <td><p id="showPosition" class="text">Front End Designer</p></td>
+                </tr>
+
+                <tr class="button-table" border="0">
+                    <td>
+                        <button onclick="show_hide()" class="button" id="edit" type="button" value="Edit">Edit</button>
+                    </td>
+                    <td>
+                        <input class="button" id="resume" type="button" value="Resume">
+                    </td>
+                </tr>
+            
+            </table>
+        
+            
+        </div>
+
+        <div class="vertical">
+
+        </div>
+
+        <div class="content-2">
+            <table id="show2" name="show2" class="tabel" border="0">
+                <tr>
+                    <td><strong>Availability</strong></td>
+                    <td id="showAvailablee" class="text">Full Time</td>
+                </tr>
+                <tr>
+                    <td><strong>Usia</strong></td>
+                    <td id="showUmur" class="text">19</td>
+                </tr>
+                <tr>
+                    <td><strong>Lokasi</strong></td>
+                    <td id="showLocation" class="text">Semarang, Indonesia</td>
+                </tr>
+                <tr>
+                    <td><strong>Pengalaman</strong></td>
+                    <td id="showExp" class="text">2</td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td class="text">prsananda14@gmail.com</td>
+                </tr>
+        </table>
+        </div>
+    </section>
+        
+    <section id="form_container" class="container">
+    <form id="isiForm" action="">
+        <label for=""><strong>Nama</strong></label>
+        <br>
+        <input id="name" name ="name" type="text" size="162">
+        <br>
+        <br>
+        <label for=""><strong>Role</strong></label>
+        <br>
+        <input id="position" name="position" type="text" size="162">
+        <br>
+        <br>
+        <label for=""><strong>Availability</strong></label>
+        <br>
+        <input id="availablee" name="availablee" type="text" size="162">
+        <br>
+        <br>
+        <label for=""><strong>Usia</strong></label>
+        <br>
+        <input id="umur" name="umur" type="text" size="162">
+        <br>
+        <br>
+        <label for=""><strong>Lokasi</strong></label>
+        <br>
+        <input id="location" name="location" type="text" size="162">
+        <br>
+        <br>
+        <label for=""><strong>Years Experience</strong></label>
+        <br>
+        <input id="exp" name="exp" type="text" size="162">
+        <br>
+        <br>
+        <input name="button" onclick="ubahData()" class="button" type="submit" value="SUBMIT">
+    </form>
+    </section>
+       
+    <script>
+        // navbar
+        const menuBtn = document.querySelector('.menu-btn')
+        const navbarlinks = document.querySelector('.navbar-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navbarlinks.classList.toggle('mobile-menu')
+        });
+
+
+    </script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
